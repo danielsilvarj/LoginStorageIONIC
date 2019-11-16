@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button href="home" size="small" color="primary">Home
+      <ion-icon slot="start" name="home"></ion-icon>
+    </ion-button>
+  
+    <ion-button href="cadastro" size="small" color="primary">Cadastro
+      <ion-icon slot="start" name="person"></ion-icon>
+    </ion-button>
+    <ion-card>
+        <ion-card-content>
+          <ion-list lines="none">
+            <ion-item>
+              <ion-label position="floating">Login </ion-label>
+              <ion-input type="text" [(ngModel)]="login.login"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label position="floating">Senha </ion-label>
+              <ion-input type="password" [(ngModel)]="login.senha"></ion-input>
+            </ion-item>
+            <ion-button (click)="logon();" color="tertiary" style="scroll-margin-top: 0px;" size="block">Login &nbsp
+            <ion-icon name="log-in"> </ion-icon> 
+
+            </ion-button>
+          </ion-list>
+
+  
+        </ion-card-content>
+    </ion-card>
+</ion-content>

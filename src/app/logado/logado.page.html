@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Logado</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="welcome-card">
+    Bem Vindo ao Sistema : {{logado.login}}
+  </ion-card>
+  <ion-button (click)="logout();" color="warning" size="block" style="margin-top: 10px;">
+    Deslogar &nbsp;
+    <ion-icon name=exit></ion-icon>
+  </ion-button>
+
+</ion-content>
